@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
 		},
 		{ 
 			:name => "ansible-host",
-			:box => "tower_v2.3",
+			:box => "tower_v3.1.3",
 			:ram => 1024,
 			:vcpu => 1,
 			:ip => "192.168.29.4" 
