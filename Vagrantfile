@@ -29,7 +29,8 @@ Vagrant.configure("2") do |config|
 	# Set up the proxy username and password settings.
 	# This uses whatever is set in the environment variable so you don't need to make them public here
 	# PROTIP: encode special characters using percent encoding: https://en.wikipedia.org/wiki/Percent-encoding
-	puts "Setting up the proxy config values..."
+	
+	#puts "Setting up the proxy config values..."
 	# Uncomment the lines below if you want to see the passwords on screen
 	if Vagrant.has_plugin?("vagrant-proxyconf")
 		if ENV["http_proxy"]
@@ -81,7 +82,7 @@ Vagrant.configure("2") do |config|
 				config.vm.provision :shell, path: "ansibleconf.sh"
 				
 			end
-      
+           
 			config.vm.provision :shell, path: "bootstrap-node.sh"
 		end    
 	end
