@@ -1,4 +1,4 @@
-# BAU Ansible training: Session 1
+# Ansible training
 
 Multi-Machine Vagrant Environments:
 This Vagrantfile will create 3 Centos VM's to simulate Ansible control machine and 2 target hosts. 
@@ -33,7 +33,19 @@ Once you are done:
 
 ## Ansible Testing
 
-## The Vagrantfile:
+## Keys directory
+Contains the private and public key used to authenticate to the targets over ssh.  Vagrant box trenthani/at-centos has the public key added to the authorizedkeys for the Vagrant users.
+
+## Seed directory
+Contains the basic structure required for an ansible project.  
+ - inventories/
+ - playbooks/
+ - roles/
+ - ansibile.cfg
+
+ ## Note .gitignore
+ To avoid unintentional loading of directories and files to your git repository be sure to configure your inclusions and exclusions via .gitignore.
+
 
 
 

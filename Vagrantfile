@@ -5,21 +5,21 @@ Vagrant.configure("2") do |config|
 	boxes = [
 		{ 
 			:name => "client2", 
-			:box => "centos-7.3",
+			:box => "trenthani/at-centos",
 			:ram => 512,
 			:vcpu => 1,
 			:ip => "192.168.29.2" 
 		},
 		{ 
 			:name => "client1",
-			:box => "centos-7.3", 
+			:box => "trenthani/at-centos", 
 			:ram => 512,
 			:vcpu => 1,
 			:ip => "192.168.29.3" 
 		},
 		{ 
 			:name => "ansible-host",
-			:box => "tower_v3.1.3",
+			:box => "trenthani/at-tower",
 			:ram => 1024,
 			:vcpu => 1,
 			:ip => "192.168.29.4" 
